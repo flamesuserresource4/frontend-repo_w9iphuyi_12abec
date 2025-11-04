@@ -4,16 +4,19 @@ import { ArrowRight } from 'lucide-react';
 export default function Hero() {
   return (
     <section id="home" className="relative">
-      <div className="relative h-[88vh] w-full overflow-hidden rounded-b-[2rem] border-b border-white/10">
+      <div className="relative h-[90vh] w-full overflow-hidden rounded-b-[2rem] border-b border-white/10">
+        {/* 3D Interactive Spline Scene */}
         <div className="absolute inset-0">
           <Spline
-            scene="https://prod.spline.design/VJLoxp84lCdVfdZu/scene.splinecode"
+            scene="https://prod.spline.design/EF7JOSsHLk16Tlw9/scene.splinecode"
             style={{ width: '100%', height: '100%' }}
           />
         </div>
 
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0)_0%,rgba(0,0,0,0.35)_55%,rgba(0,0,0,0.8)_100%)]" />
+        {/* Gradient overlay that doesn't block interaction */}
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0)_0%,rgba(0,0,0,0.35)_55%,rgba(0,0,0,0.85)_100%)]" />
 
+        {/* Foreground content */}
         <div className="relative z-10 mx-auto flex h-full max-w-7xl items-center px-6">
           <div className="max-w-2xl text-white">
             <p className="mb-3 text-sm tracking-widest text-white/70">PORTFOLIO</p>
@@ -21,7 +24,7 @@ export default function Hero() {
               Fraol Teshome
             </h1>
             <p className="mt-4 text-lg text-white/85 sm:text-xl">
-              Building modern, playful, and interactive web experiences with a strong focus on performance and design.
+              A dark, futuristic interactive hero featuring a 3D browser scene and an astronaut reaching for a flowing ribbon. Explore and interact with the elements in real time.
             </p>
 
             <div className="pointer-events-auto mt-8 flex flex-wrap gap-3">
